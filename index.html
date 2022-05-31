@@ -9,16 +9,22 @@
       integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
       crossorigin="anonymous"
     ></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <script src="index.js" defer></script>
+    <link rel="stylesheet" href="index.css" />
 
     <title>Apod</title>
   </head>
   <body>
     <h1>Aplicação APOD</h1>
 
-    <h2>Preencha uma data abaixo, e tenha uma imagem tirada da NASA.</h2>
-    <input id="data" type="date" value="2017-06-01" />
-    <button id="botao">OK</button>
+    <h2>Preencha uma data abaixo, e tenha uma imagem retirada da NASA.</h2>
+
+    <div id="campoData">
+      <input id="data" type="date" value="2017-06-01" />
+      <button id="botao">OK</button>
+    </div>
+
     <img id="imagem" src="" alt="" />
 
     <iframe
@@ -29,11 +35,7 @@
       frameborder="0"
       allowfullscreen
     ></iframe>
-    <p id="texto">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque molestiae
-      sit, ipsum consequatur cupiditate unde consectetur, rem quod possimus
-      dolor natus? Tenetur commodi atque, veniam distinctio iure officiis autem
-      quo.
-    </p>
+    <h2 id="titulo"></h2>
+    <p id="texto"></p>
   </body>
 </html>
